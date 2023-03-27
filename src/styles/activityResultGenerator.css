@@ -1,0 +1,302 @@
+.result {
+    height: 45%;
+    display: flex;
+    margin-left: 100px;
+    margin: 1em;
+    background-color: var(--info-color);
+    border-radius: 0.3em;
+}
+
+.result h3 {
+    font-size: 2.6vmin;
+    text-shadow: 1px 1px 30px;
+}
+
+.result p {
+    font-size: 2.1vmin;
+}
+
+.contentsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 0em;
+}
+
+.commentsContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 20%;
+    padding: 1em;
+}
+
+.commentsContainer > div > input {
+    width: 95%;
+    font-size: 80%;
+    padding: 0.3em;
+    margin-top: 0.3em;
+}
+
+.commentsContainer > div > button {
+    width: 60%;
+    font-size: 80%;
+    padding: 0.3em;
+    margin-top: 0.3em;
+}
+
+.commentsContainer > .scrollView {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.commentsContainer > div > * {
+    overflow-y: hidden;
+}
+
+.commentsContainer > div > .comment {
+    font-size: 70%;
+    background-color: rgba(128, 128, 128, 0.226);
+    padding: 0.4em;
+    margin: 0.2em;
+    margin-bottom: 1em; 
+    text-align: justify;
+    border-end-end-radius: 1em;
+}
+
+.commentsContainer > div > .comment> .text {
+    padding: 0.3em;
+    font-weight: 800;
+    border-bottom: 1px solid rgba(84, 83, 83, 0.587);
+}
+
+.commentsContainer > div > .comment> .name {
+    padding: 0.3em;
+}
+
+
+.commentsContainer .starContainer .starWidget input {
+    display: none;
+}
+
+.starContainer {
+    float:left;
+    padding-top: 0.4vmax;
+}
+
+.star {
+    font-size: 1.6vmax;
+    color: rgb(199, 199, 169);
+    padding: 0.3vmax;
+    transition: all 0.2s ease;
+    vertical-align: -0.5vmax;
+    float: right;
+}
+
+input:not(:checked) ~ label:hover ~ label {
+    color:rgb(223, 212, 64);
+}
+
+input:not(:checked) ~ label:hover {
+    color:rgb(223, 212, 64);
+}
+
+input:checked ~ label {
+    color: rgb(255, 255, 0);
+}
+
+.starIcon {
+    font-size: 1.6vmax;
+    color: rgb(253, 249, 14);
+    padding: 0.3vmax;
+    vertical-align: -0.5vmax;
+}
+
+.starIconDark {
+    font-size: 1.6vmax;
+    color: rgb(199, 199, 169);
+    padding: 0.3vmax;
+    vertical-align: -0.5vmax;
+}
+
+.imgContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+}
+
+.activityImg {
+    flex-grow: 1;
+    max-width: 100%;
+    max-height: 35vh;
+    height: auto;
+    margin-left: 1em;
+    border-radius: 0.3em;
+    display: grid;
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.25);
+}
+
+.details {
+    margin: 0 0 0 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.heartIcon {
+    margin-left: 2em;
+    height: 2em;
+    width: 1.5em;
+    vertical-align: middle;
+    color: rgb(215, 10, 10);
+}
+
+.heartIcon:hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.heartIcon.filled {
+    color: rgb(215, 10, 10)
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 0.2em;
+}
+
+
+.errorResult {
+    height: 45%;
+    display: flex;
+    margin-left: 100px;
+    margin: 1em;
+    background-color: var(--info-color);
+    border-radius: 0.3em;
+}
+
+.errorResult p {
+    padding-top: 1em;
+    font-size: 2.1vmin;
+}
+
+.errorResult p:first-child {
+    padding-top: 1em;
+    font-size: 2.1vmin;
+    color: rgb(199, 36, 36);
+}
+
+.errorResult .crossIcon {
+    vertical-align: -0.2em;
+}
+
+.errorResult .details {
+    border-right: none
+}
+
+.errorResult .imgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+.loadingLogo{
+    width: 7vmax;
+    height: 7vmax;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;     
+}
+
+@media (max-width: 600px) {
+
+    .result {
+        font-size: small;
+        margin-left: 30px;
+        flex-direction: column;
+    }
+    
+    .contentsContainer {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0; 
+    }
+    
+    .commentsContainer {
+        display: flex;
+        flex-grow: 1;
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between; 
+        height: 40%;
+    }
+
+    .commentsContainer > div > input {
+        width: 100%;
+    }
+    
+    .commentsContainer > div > button {
+        width: 100%;
+    }
+    
+    .commentsContainer > .scrollView {
+        overflow-y: scroll;
+        overflow-x: auto;
+        min-width: 70%;
+    }
+    
+    .commentsContainer > .addComment {
+        width: 100%;
+    }
+    
+    .commentsContainer > div > .comment {
+        font-size: 70%;
+        border: 1px solid black;
+        background-color: rgba(128, 128, 128, 0.226);
+        padding: 0.4em;
+        margin-right: 1em;
+        text-align: justify;
+        flex-grow: 1;
+    }
+    
+    .commentsContainer > div > .comment > p:first-child {
+        font-weight: 800;
+        border: 1px solid black;
+    }
+    
+    .imgContainer {
+        display: none;
+    }
+    
+    .activityImg {
+        flex-grow: 1;
+        max-width: 100%;
+        max-height: 35vh;
+        height: auto;
+        margin-left: 1em;
+        border-radius: 0.3em;
+        display: grid;
+        box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.25);
+    }
+    
+    .details {
+        margin-left: 1em;
+        padding-left: 2em;
+        padding-right: 2em;
+        border-bottom: 2px solid black;
+        border-right: 0px;
+        border-left: 0px;
+    }
+    
+    .details > h3 {
+        text-decoration: underline;
+    }
+}

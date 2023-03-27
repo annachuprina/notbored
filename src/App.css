@@ -1,0 +1,67 @@
+html, body, body > div, body > div > div, body > div > div > div {
+  height: 100%;
+  font-family: 'KgHappySolid', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 10pt;
+}
+
+button{
+  padding: 1.5em;
+  border: none;
+  border-radius: 0.3em;
+}
+
+select, button, input {
+  font-family: 'KgHappySolid', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input {
+  border: 0.5px solid rgb(181, 162, 162);
+  border-radius: 0.3em;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 85%;
+}
+
+@font-face {
+  font-family: "KgHappySolid";
+  src: url('assets/KgHappySolid-myDG.ttf') format('truetype');
+}
+
+/* SummaryNotesRegular-Ea5ln.ttf */
+
+:root {
+  --dark-color: rgb(151, 151, 151, 0.7);
+  --white-color: white;
+  --text-dark-color: rgb(37, 37, 37);
+  --text-light-color: rgb(237, 237, 237);
+  --info-color: rgba(248, 193, 64, 0.61);
+  --blue-color: rgba(62, 184, 209, 0.85);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f14d;
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.559);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+

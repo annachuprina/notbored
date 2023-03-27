@@ -1,0 +1,160 @@
+.favorites {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.favorites h1 {
+    font-size: 3em;
+    z-index: 20;
+}
+
+.favorites > .center {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 1em;
+}
+
+.favorites > .center > button {
+    background-color: rgba(128, 0, 0, 0.85);
+    z-index: 5;
+}
+
+.favorites > .textContainer {
+    z-index: 5; 
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.emptyList {
+    background-color: var(--info-color);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.favoriteActivityHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: var(--dark-color);
+    padding: 2em 2em 2em 2em;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.favoriteActivities {
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+.favoriteActivity{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: var(--info-color);
+    padding: 1em;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.favoriteActivity > * {
+    border-right: 1px solid black;
+    padding: 1em;
+}
+
+.favoriteActivity > div:last-child {
+    border-right: 1px solid transparent;
+    padding-left: 0;
+}
+
+.nbParticipants {
+    display: block
+}
+
+.xIcon {
+    color:rgba(128, 0, 0, 0.85);
+}
+
+.xIcon:hover {
+    color: rgb(219, 4, 4)
+}
+
+@media (max-width: 600px) {
+    .favorites {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px
+    }
+    
+    .favorites > .center {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        padding: 1em;
+    }
+    
+    .favorites > .center > button {
+        background-color: rgba(128, 0, 0, 0.85);
+        z-index: 5;
+    }
+    
+    .emptyList {
+        background-color: var(--info-color);
+        padding: 1em;
+        border-radius: 1em;
+    }
+    
+    .favoriteActivityHeader{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: var(--dark-color);
+        padding: 0;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        border-radius: 0.3em;
+        margin-bottom: 1em;
+        font-weight: 700;
+        text-align: center;
+        font-size: 0.7em;
+    }
+    
+    
+    .favoriteActivity{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        background-color: var(--info-color);
+        padding: 0;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        border-radius: 0.3em;
+        margin-bottom: 1em;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 0.6em;
+    }
+    
+    .favoriteActivity > * {
+        border-right: 1px solid black;
+        padding: 0.3em;
+    }
+    
+    .favoriteActivity > div:last-child {
+        border-right: 1px solid transparent;
+        padding-left: 0;
+    }
+    
+    .nbParticipants {
+        display: block
+    }
+}
